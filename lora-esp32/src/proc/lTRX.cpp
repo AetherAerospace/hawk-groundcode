@@ -5,8 +5,8 @@
 
 #include <Arduino.h>
 #include "lTRX.h"
-#include "util/LoRa.h"
-#include "util/Controller.h"
+#include "proc/LoRaWAN.h"
+#include "proc/Controller.h"
 #include "util/Serial.h"
 #include "settings/ltrxset.h"
 
@@ -110,11 +110,11 @@ void lTRXctl() {
     crCL = millis();
     if (crCL - prCL > LTRX_DELAY) {
         prCL = crCL;
-        // main control is always sent
+        // is always sent
         craftCTL(31);
+        craftCTL(32);
         // every 4 packets
         if (pktCnt % 4 == 0) {
-            craftCTL(32);
             craftCTL(33);
             craftCTL(11);
         }

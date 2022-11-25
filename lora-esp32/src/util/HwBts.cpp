@@ -3,7 +3,7 @@
 */
 
 #include <Arduino.h>
-#include "hwbts.h"
+#include "HwBts.h"
 #include "pins/buttonPins.h"
 
 void inithwbts() {

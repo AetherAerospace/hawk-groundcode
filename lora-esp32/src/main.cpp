@@ -13,12 +13,12 @@
 */
 
 #include <Arduino.h>
-#include "util/LoRa.h"
-#include "util/hwbts.h"
-#include "util/Controller.h"
+#include "proc/Controller.h"
+#include "proc/LoRaWAN.h"
+#include "proc/lTRX.h"
+#include "util/HwBts.h"
 #include "util/Serial.h"
 #include "util/OLED.h"
-#include "proc/lTRX.h"
 
 void setup() {
   // Serial init

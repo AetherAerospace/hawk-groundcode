@@ -37,5 +37,5 @@ void initOLED() {
     display.setTextColor(SSD1306_WHITE);
     display.setTextSize(OLED_FONT_SIZE);
     srlInfo("OLED", "Initialized");
-    writeToDisplay("OLED:", "Initialized");
+    writeToDisplay("OLED", "Initialized");
 }

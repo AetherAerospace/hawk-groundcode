@@ -7,7 +7,7 @@
 #include <SPI.h>
 #include <LoRa.h>
 #include <Wire.h>
-#include "LoRa.h"
+#include "LoRaWAN.h"
 #include "proc/lTRX.h"
 #include "util/Serial.h"
 #include "util/OLED.h"
