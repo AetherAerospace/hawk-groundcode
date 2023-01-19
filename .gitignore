@@ -10,4 +10,9 @@ __pycache__/
 .idea/workspace.xml
 
 web-control-panel/frontend/js/keys.js
+missioncontrol/token.py
+
 *.mp4
+
+#ignore the folder web-control-panel
+web-control-panel/
